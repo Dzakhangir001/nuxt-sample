@@ -1,0 +1,48 @@
+{
+  "name": "fazeclansite-vue",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "deploy": "bash ./nuxt/scripts/deploy.sh"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.5.0",
+    "nuxt": "^2.14.0",
+    "swiper": "^6.1.1",
+    "velocity-animate": "^1.5.2",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-lazy-images": "^1.4.6",
+    "vue-lazyload": "^1.3.3",
+    "vue-lottie": "^0.2.1",
+    "vue-virtual-scroll-list": "^2.3.1",
+    "vue-radial-progress": "^0.3.2",
+    "vue-youtube": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "node-sass": "^4.14.1",
+    "nuxt-purgecss": "^1.0.0",
+    "prettier": "^2.1.1",
+    "sass-loader": "^9.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
+  }
+}
